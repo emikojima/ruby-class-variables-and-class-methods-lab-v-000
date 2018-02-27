@@ -18,8 +18,8 @@ class Song
     @@count
   end
   
-  def self.artist
-    @@artists.include?()
+  def self.artists
+    @@artists.include?(@artist)
   end
   
   def self.genre
