@@ -19,7 +19,8 @@ class Song
   end
   
   def self.artists
-    @@artists.include?(@artist)
+    uniq = []
+    uniq = @@artists.uniq
   end
   
   def self.genre
