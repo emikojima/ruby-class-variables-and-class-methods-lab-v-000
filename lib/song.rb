@@ -43,7 +43,7 @@ class Song
     
     def self.artist_count
       artist_hash = {}
-      @@artist.each do |artist|
+      @@artists.each do |artist|
         if artist_hash[artist]
           artist_hash[artist] += 1 
         else
