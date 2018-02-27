@@ -30,11 +30,8 @@ class Song
   
   def self.genre_count
       genre_count = {} #hash key - genre, value - # songs in genre 
-      if !genre_count.keys.include?(@genre)
-      genre_count[@genre] = []
-      end
-      #binding.pry
-      genre_count[@genre] << @name
+     genre_count[genre] = self.genres
+     binding.pry
   end
       
  
