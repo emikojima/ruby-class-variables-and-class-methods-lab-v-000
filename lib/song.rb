@@ -33,7 +33,8 @@ class Song
       if !genre_count.keys.include?(@genre)
       genre_count[@genre] = []
     end
-    genre_count[@genre] << 
+    binding.pry
+    genre_count[@genre] << @name
   end
       
   end
