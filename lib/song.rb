@@ -23,7 +23,7 @@ class Song
     uniq_artists = @@artists.uniq
   end
   
-  def self.genre
+  def self.genres
     uniq_genres = []
     uniq_genres = @@genres.uniq
   end
