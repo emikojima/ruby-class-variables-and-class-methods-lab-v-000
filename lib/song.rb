@@ -30,7 +30,7 @@ class Song
   
   def self.genre_count
       genre_count = {} #hash key - genre, value - # songs in genre 
-     genre_count[genre] = self.genres
+     genre_count[genre] = @@genres.uniq
      binding.pry
   end
       
