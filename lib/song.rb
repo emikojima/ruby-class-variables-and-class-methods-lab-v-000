@@ -29,9 +29,7 @@ class Song
   end
   
   def self.genre_count
-      genre_types(@genre, @song) = {} #hash key - genre, value - # songs in genre 
-     genre_types = 
-     #inding.pry
+      @@genres.each { |genre| frequencies[genre] +=1 }
   end
       
  
