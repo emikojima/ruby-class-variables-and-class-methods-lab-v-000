@@ -19,14 +19,13 @@ class Song
   end
   
   def self.artists
-    uniq = []
-    uniq = @@artists.uniq
+    uniq_artists = []
+    uniq_artists = @@artists.uniq
   end
   
   def self.genre
-    if !@@genres.include?(@genre)
-      @@genres << @genre
-    end
+    uniq_genres = []
+    uniq_genres = @@genres.uniq
   end
   
 end
