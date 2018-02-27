@@ -32,7 +32,7 @@ class Song
     genre_hash = {}
     #binding.pry
       @@genres.each do |genre|
-        if genre_hash[genre] 
+        if genre_hash[genre] #if this exists already
           genre_hash[genre] +=1
         else
           genre_hash[genre] = 1 
@@ -40,7 +40,18 @@ class Song
       end
       genre_hash
   end
-      
- 
+    
+    def self.artist_count
+      artist_hash = {}
+      @@artist.each do |artist|
+        if artist_hash[artist]
+          artist_hash[artist] += 1 
+        else
+          artist_hash[artist] = 1 
+        end
+      end
+      artist_hash
+    end
+          
 end
   
